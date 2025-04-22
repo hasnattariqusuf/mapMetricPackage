@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "MapMetrics",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v12)
     ],
     products: [
         .library(
@@ -15,7 +15,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MapMetrics",
-            path: "XCFrameworks/MapMetrics.xcframework"
+            path: "./MapMetrics.xcframework"
         )
     ]
 )
