@@ -10,12 +10,12 @@ let package = Package(
         .library(
             name: "MapMetrics",
             targets: ["MapMetrics"]
-        ),
+        )
     ],
     targets: [
         .binaryTarget(
             name: "MapMetrics",
-            path: "./MapMetrics.xcframework"
+            path: "XCFrameworks/MapMetrics.xcframework"
         )
     ]
 )
