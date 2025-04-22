@@ -1,4 +1,3 @@
-// swift-tools-version:5.3
 // swift-tools-version:5.6
 import PackageDescription
 
@@ -10,19 +9,13 @@ let package = Package(
     products: [
         .library(
             name: "MapMetrics",
-            targets: ["MapMetricsWrapper"]
+            targets: ["MapMetrics"]
         ),
     ],
     targets: [
         .binaryTarget(
             name: "MapMetrics",
             path: "./MapMetrics.xcframework"
-        ),
-        .target(
-            name: "MapMetricsWrapper",
-            dependencies: ["MapMetrics"],
-            path: "Sources/MapMetricsWrapper",
-            publicHeadersPath: "."
         )
     ]
 )
