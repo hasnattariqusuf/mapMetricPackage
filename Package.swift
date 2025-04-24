@@ -15,7 +15,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MapMetrics",
-            path: "MapMetrics.xcframework"
+            path: "MapMetrics/MapMetrics.xcframework"
         )
     ]
 )
